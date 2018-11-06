@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ejs--save' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose install initial load of /Users/h205p4/Desktop/dogs/package.json
+5 warn package.json dogs@1.0.0 No description
+6 warn package.json dogs@1.0.0 No repository field.
+7 warn package.json dogs@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /Users/h205p4/Desktop/dogs/node_modules/body-parser/package.json
+9 verbose installManyTop reading scoped package data from /Users/h205p4/Desktop/dogs/node_modules/ejs/package.json
+10 verbose installManyTop reading scoped package data from /Users/h205p4/Desktop/dogs/node_modules/express/package.json
+11 verbose installManyTop reading scoped package data from /Users/h205p4/Desktop/dogs/node_modules/mongodb/package.json
+12 verbose readDependencies loading dependencies from /Users/h205p4/Desktop/dogs/package.json
+13 silly cache add args [ 'ejs--save', null ]
+14 verbose cache add spec ejs--save
+15 silly cache add parsed spec Result {
+15 silly cache add   raw: 'ejs--save',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'ejs--save',
+15 silly cache add   rawSpec: '',
+15 silly cache add   spec: 'latest',
+15 silly cache add   type: 'tag' }
+16 silly addNamed ejs--save@latest
+17 verbose addNamed "latest" is being treated as a dist-tag for ejs--save
+18 info addNameTag [ 'ejs--save', 'latest' ]
+19 silly mapToRegistry name ejs--save
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry data Result {
+22 silly mapToRegistry   raw: 'ejs--save',
+22 silly mapToRegistry   scope: null,
+22 silly mapToRegistry   name: 'ejs--save',
+22 silly mapToRegistry   rawSpec: '',
+22 silly mapToRegistry   spec: 'latest',
+22 silly mapToRegistry   type: 'tag' }
+23 silly mapToRegistry uri https://registry.npmjs.org/ejs--save
+24 verbose addNameTag registry:https://registry.npmjs.org/ejs--save not in flight; fetching
+25 verbose request uri https://registry.npmjs.org/ejs--save
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 1:02:59 PM
+28 verbose request id 2d94157fd2a42872
+29 http request GET https://registry.npmjs.org/ejs--save
+30 http 404 https://registry.npmjs.org/ejs--save
+31 verbose headers { date: 'Fri, 12 Oct 2018 20:02:59 GMT',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'content-length': '21',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'set-cookie': [ '__cfduid=d3825c1ee358abd11109ab3155c95d3761539374579; expires=Sat, 12-Oct-19 20:02:59 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+31 verbose headers   'cf-cache-status': 'MISS',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   'cf-ray': '468c2ad16eec6e32-SJC',
+31 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+31 verbose headers   vary: 'accept-encoding, accept',
+31 verbose headers   server: 'cloudflare' }
+32 silly get cb [ 404,
+32 silly get   { date: 'Fri, 12 Oct 2018 20:02:59 GMT',
+32 silly get     'content-type': 'application/json',
+32 silly get     'content-length': '21',
+32 silly get     connection: 'keep-alive',
+32 silly get     'set-cookie': [ '__cfduid=d3825c1ee358abd11109ab3155c95d3761539374579; expires=Sat, 12-Oct-19 20:02:59 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+32 silly get     'cf-cache-status': 'MISS',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     'cf-ray': '468c2ad16eec6e32-SJC',
+32 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+32 silly get     vary: 'accept-encoding, accept',
+32 silly get     server: 'cloudflare' } ]
+33 verbose stack Error: Not found : ejs--save
+33 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+33 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+33 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+33 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+33 verbose stack     at emitTwo (events.js:87:13)
+33 verbose stack     at Request.emit (events.js:172:7)
+33 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+33 verbose stack     at emitOne (events.js:82:20)
+33 verbose stack     at Request.emit (events.js:169:7)
+33 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+34 verbose statusCode 404
+35 verbose pkgid ejs--save
+36 verbose cwd /Users/h205p4/Desktop/dogs
+37 error Darwin 15.6.0
+38 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "ejs--save"
+39 error node v4.5.0
+40 error npm  v2.15.9
+41 error code E404
+42 error 404 Not found : ejs--save
+42 error 404
+42 error 404 'ejs--save' is not in the npm registry.
+42 error 404 You should bug the author to publish it (or use the name yourself!)
+42 error 404 It was specified as a dependency of 'dogs'
+42 error 404
+42 error 404 Note that you can also install from a
+42 error 404 tarball, folder, http url, or git url.
+43 verbose exit [ 1, true ]
