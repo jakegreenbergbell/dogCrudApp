@@ -56,7 +56,7 @@ app.get('/update', function(req,res){
 //create
 app.post('/addDog', function(req, res) {
   db.collection('jake').insertOne(req.body)
-  res.redirect('/api')
+  res.redirect('/')
 })
 
 // all of our routes will be prefixed with /api
