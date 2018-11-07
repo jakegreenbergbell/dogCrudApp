@@ -31,7 +31,7 @@ app.get('/', function(req, res) {
 })
 
 //delete an entry from the db
-router.get('/delete/:name', function(req,res) {
+app.get('/delete/:name', function(req,res) {
   var dogName = req.params.name
   console.log(dogName);
   db.collection('jake').deleteOne({name:dogName})
@@ -39,7 +39,7 @@ router.get('/delete/:name', function(req,res) {
 })
 
 //update an entry from the db
-router.get('/update', function(req,res){
+app.get('/update', function(req,res){
   var dogName = req.query.newName
   var dogBreed = req.query.newBreed
   var oldName = req.query.oldName
@@ -54,7 +54,7 @@ router.get('/update', function(req,res){
 })
 
 //create
-router.post('/addDog', function(req, res) {
+app.post('/addDog', function(req, res) {
   db.collection('jake').insertOne(req.body)
   res.redirect('/api')
 })
