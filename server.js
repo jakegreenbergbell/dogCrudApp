@@ -11,8 +11,8 @@ MongoClient.connect('mongodb://jakegb:password1@ds227853.mlab.com:27853/jake',
 {useNewUrlParser:true}, (err, client) => {
   if (err) return console.log(err)
   db = client.db('jake') // whatever your database name is
-  app.listen(3000, () => {
-    console.log('listening on 3000')})
+  app.listen(process.env.PORT || 5000, () => {
+    console.log('listening on 5000')})
   })
 
 // configure app to use bodyParser() and ejs
