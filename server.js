@@ -56,7 +56,7 @@ app.get('/update', function(req,res){
 //create
 app.post('/addDog', function(req, res) {
   db.collection('jake').insertOne(req.body)
-  res.redirect('/')
+  res.redirect('https://dogs-app-crud.herokuapp.com/api/')
 })
 
 // all of our routes will be prefixed with /api
