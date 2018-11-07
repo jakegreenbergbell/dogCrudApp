@@ -23,7 +23,7 @@ app.set('view engine','ejs')
 var router = express.Router();
 
 //a “get” at the root of our web app: http://localhost:3000/api
-router.get('/', function(req, res) {
+app.get('/', function(req, res) {
   db.collection('jake').find().toArray(function(err, results) {
     res.render('index.ejs', {jake: results})
     //console.log(results)
