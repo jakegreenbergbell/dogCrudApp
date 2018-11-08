@@ -32,7 +32,7 @@
 <center><body>
 
     <h2>Dummy Dog Directory</h2>
-    <form action="/api/addDog" method="POST">
+    <form action="/addDog" method="POST">
       <input type="text" placeholder="new breed" name="breed">
       <input type="text" placeholder="new name" name="name">
     <input type="submit">
@@ -51,7 +51,7 @@
           <a class="update" style ="cursor:pointer">
           <img src="images/update.png" class="update" onclick="switchAndSend('<%=jake[i].name%>' , '<%=jake[i].breed%>')"><a/>
         </td>
-        <td><a class="delete" href="/api/delete/<%= jake[i].name%>">
+        <td><a class="delete" href="/delete/<%= jake[i].name%>">
           <img src="images/delete.png"></a>
         </td>
         <span id="needsUpdating">
