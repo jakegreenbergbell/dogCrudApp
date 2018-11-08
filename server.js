@@ -22,7 +22,8 @@ app.set('view engine','ejs')
 // get an instance of the express Router
 var router = express.Router();
 
-//a “get” at the root of our web app: http://localhost:3000/api
+//a “get” at the root of our web app: http://localhost:3000/
+
 app.get('/', function(req, res) {
   db.collection('jake').find().toArray(function(err, results) {
     res.render('index.ejs', {jake: results})
@@ -35,7 +36,7 @@ app.get('/delete/:name', function(req,res) {
   var dogName = req.params.name
   console.log(dogName);
   db.collection('jake').deleteOne({name:dogName})
-  res.redirect('/api')
+  res.redirect('/')
 })
 
 //update an entry from the db
@@ -59,5 +60,7 @@ app.post('/addDog', function(req, res) {
   res.redirect('/')
 })
 
-// all of our routes will be prefixed with /api
+// all of our routes will be prefixed with /
+
+
 // app.use('/', router)
