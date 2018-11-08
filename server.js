@@ -60,4 +60,4 @@ app.post('/addDog', function(req, res) {
 })
 
 // all of our routes will be prefixed with /api
-app.use('https://dogs-app-crud.herokuapp.com/api', router)
+app.use(/api', router)
