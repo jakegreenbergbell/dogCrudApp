@@ -60,4 +60,4 @@ app.post('/addDog', function(req, res) {
 })
 
 // all of our routes will be prefixed with /api
-app.use('/api', router)
+// app.use('/', router)
